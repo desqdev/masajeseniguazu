@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #00154e;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 6px;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 650px;
+    background: -webkit-linear-gradient(to right, hsla(291, 87%, 69%, 0.5) 6.9%, hsla(224, 93%, 40%, 0.61) 112.8% ),url(imagen/espalda.png.jpg);
+    background: linear-gradient(to right, hsla(291, 87%, 69%, 0.5) 6.9%, hsla(224, 93%, 40%, 0.61) 112.8% ),url(imagen/espalda.png.jpg) center;
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+nav{
+    
+    text-align: right;
+    padding: 30px 50px 0 0;
+    
+    
+}
+nav> a{
+    color: rgb(255, 255, 255);
+    font-family: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+
+nav> a:hover{
+  text-decoration: underline;    
+}
+header .Texto-encabezado{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Texto-encabezado h1{
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 80px;
+    color: #fff;    
+}
+.Texto-encabezado h2{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 1px;
+}
+.Texto-encabezado h3{
+    font-family:'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+}
+header a{
+    color: #fff;
+}
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Nosotros*/
+main .sobre-nosotros{
+    border-radius: 15%;
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.imagen-abaut-us{
+    border-radius: 7%;
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #041364;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5);
+    margin-right: 5px;
+    
+}
+.contenido-textos p{
+    font-family:'Open Sans', sans-serif;
+    padding: 0px 0px 30px 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/*Galeria*/
+.portafolio{
+    background: #f2f2f2;
+ 
+}
+.Galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+  
+    border-radius: 6px;
+    width: 24%;
+     margin-bottom: 10px;
+     height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(0);
+    background: rgba(4, 17, 138, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 39%;
+}
+.hover-galeria p{
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 13px;
+
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1.5);
+}
+/*clientes*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #090781;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 5px;
+
+}
+/*servicio*/
+.abaut-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.servicio-id{
+    width: 28%;
+    text-align: center;
+
+}
+.servicio-id img{
+    width: 70%;
+    
+}
+.servicio-id h3{
+    margin: 10px 0;
+
+}
+.servicio-id p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*footer*/
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+footer a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #2261e9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+.content-foo p{
+    color: #ccc;   
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+@media screen and ( max-width:900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-abaut-us{
+        width: 90%;
+    }
+    /*galeria*/
+    .imagen-port{
+        width: 45%;
+       
+    }
+    /*clientes*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    /*servicio*/
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .servicio-id{
+        width: 95%;
+        text-align: center;
+    }
+
+    .servicio-id:nth-child(1) .servicio-id:nth-child(2)
+    {
+        margin-bottom: 60px;
+    }
+    .servicio-id img{
+        width: 100%;
+        margin-top: 2px;;
+    }
+}
+    @media screen and  (max-width: 500px){
+        nav{
+            text-align: center;
+            padding: 30px 0 0 0;
+        }        
+        nav >a{
+            margin-right: 5px;
+        }
+        .Texto-encabezado h1{
+            font-size: 54px;
+        }
+        .Texto-encabezado h2{
+            font-size: 23px;
+        }
+        .Texto-encabezado h3 {
+            font-size: 15px;
+        }
+        /*abaut us*/
+        .imagen-abaut-us{
+            margin-bottom: 60px;
+            width: 100%;
+        }
+        .sobre-nosotros .contenido-textos{
+            width: 100%;
+        }
+        .imagen-port{
+             width: 100%;
+        }
+        .hover-galeria{
+            
+            width: 90%;
+        }
+        
+        /*clientes*/
+
+        .cards .card{
+            height: 310px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cards .card img{
+            width: 90px;
+            height: 90px;
+        }
+
+        /*footer*/
+
+        .contenedor-footer{
+            flex-direction: column;
+            border: none;
+        }
+        .content-foo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-foo h4{
+            border:none;
+
+        }
+        
+        .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: 20px;
+        }
+        .titulo-final{
+            font-size: 15px;
+        }
+
+
+
+
+        
+    }
+
